@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Entaler.urls'
+ROOT_URLCONF = 'EntalerProject.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Entaler.wsgi.application'
+WSGI_APPLICATION = 'EntalerProject.wsgi.application'
 
 
 # Database
@@ -118,3 +118,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SECRET_KEY = os.environ['SECRET_KEY']
+
