@@ -6,10 +6,18 @@
 {% block body %} <body> {% endblock body %}
 
 {% block content %}  
-		<p> home.html </p>
-		<p>{{STATIC_URL}}images/pic03.jpg</p>
+
+	 <section id="cover">
+      <div id="cover-caption">
+        <div class="container">
+        	<p> home.html </p>
+			<p>{{STATIC_URL}}images/pic03.jpg</p>
 
 
-		<img src="{{STATIC_URL}}images/pic03.jpg">
+			<img src="{{STATIC_URL}}images/pic03.jpg">
+        </div>
+      </div>
+    </section>
+	
 
 {% endblock %}
