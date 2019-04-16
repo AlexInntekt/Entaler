@@ -4,4 +4,5 @@ from .views import EmployeesListView
 
 urlpatterns = [
 	path('', EmployeesListView.as_view()),
+
 ]
