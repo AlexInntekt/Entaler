@@ -20,3 +20,35 @@ The OS company wants you to include a section on the website where the user can 
 
 The framwork chosen is Django insteand of CherryPy
 
+
+
+How to run the project.
+After unzipping, use terminal and go to the directory.
+
+Install virtualenv, create a virtual environment and activate it. For example, on Ubuntu:
+		
+	sudo apt-get install python3-pip for 
+
+Create a virtualenv:
+	virtualenv venv .
+
+Activate it:
+    source bin/activate
+
+Install requirements:
+	pip install -r requirements/local.txt
+
+Make local migrations for the DataBase:
+	python3 src/manage.py makemigrations
+
+Migrate:
+	python3 src/manage.py migrate
+
+Run server on default port:
+	python3 src/manage.py runserver
+
+Access localhost on browser.
+
+Enjoy my homework.
+
+
