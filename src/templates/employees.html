@@ -73,7 +73,14 @@
         {% for person in object_list %}
          
             <div class="col-md-6 col-lg-4 text-center mb-5" data-aos="fade-up">
-              <img src="{{STATIC_URL}}travelers/images/person_1.jpg" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+
+              {% if person.image %}
+                <img src="{{person.image.url}}" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+              {% else %}
+                <img src="{{STATIC_URL}}/images/empl.png" alt="Image" class="img-fluid w-50 rounded-circle mb-4">
+              {% endif %}
+
+              
               <h2 class="text-black font-weight-light mb-4">{{person.name}}</h2>
               <p class="mb-4">{{person.about}}</p>
             </div>
